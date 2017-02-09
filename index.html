@@ -106,7 +106,7 @@
     		});
     	});
     	// Assure full screen.
-    	$(window).resize(function(){$('.tabs, .tabs .tab').height($(window).height()+10000).width($(window).width());});
+    	$(window).resize(function(){$('.tabs, .tabs .tab').height($(window).height()*2).width($(window).width());});
     	$('.tabs').height($(window).height()).width($(window).width());
     	$(window).keyup(function(e){
 	    	if (e.keyCode == 27){
