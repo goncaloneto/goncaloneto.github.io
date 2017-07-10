@@ -35,7 +35,6 @@
     <a class="brand" href="#">Taberific</a>
     <button class="btn btn-medium btn-primary pull-right" id="run" type="button">Run Tabs</button>
      <select id="time" class="select pull-right">
-        <option value="20">25 s</option>
         <option value="10">5 s</option>
         <option value="10">10 s</option>
         <option value="20">20 s</option>
@@ -66,7 +65,21 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
     	var timer = null;
-    	function load_tab(url){
+    	
+      viewport = document.querySelector("meta[name=viewport]");
+      viewport.setAttribute('content', $('#aspect').val());
+      $('input[value!=""]').each(function(){
+          load_tab($(this).val());
+
+      });
+      $('body').addClass('active');
+      if( $('.tabs .tab').length > 1 ){
+          timer = setInterval(rotate, parseInt($('#time').val()*1000));
+      } else {
+          $('.tabs .tab:first').addClass('active')
+      }
+      
+      function load_tab(url){
     		$('.tabs').append('<iframe class="tab" frameborder="0" height="'+$(window).height()+'" width="'+$(window).width()+'" scrolling="no" seamless="seamless" src="'+url+'"></iframe>');
     	}
     	function rotate(){
@@ -82,22 +95,7 @@
 		    $('.tabs .tab:first').addClass('active'); // display first if no next
 		    
     	}
-    	
-      function run(){
-    			viewport = document.querySelector("meta[name=viewport]");
-				viewport.setAttribute('content', $('#aspect').val());
-    			$('input[value!=""]').each(function(){
-    				load_tab($(this).val());
-    				
-    			});
-    			$('body').addClass('active');
-    			if( $('.tabs .tab').length > 1 ){
-	    			timer = setInterval(rotate, parseInt($('#time').val()*1000));
-	    		} else {
-	    			$('.tabs .tab:first').addClass('active')
-	    		}
-	    		
-      }
+
       
       $(function(){
     		
