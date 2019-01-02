@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Magic';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/magic.otf") format("opentype");
+}
+
+
+#std {
+    margin-top: 2vh;
+    font-size: 5vh;
+}
+
+#date {
+    font-size: 3vh;
+}
+
+#names {
+    font-family: 'Clicker Script';
+    font-size: 20vh;
+    margin-top: 3vh;
+    color: beige;
+}
+
+#heart {
+    font-size: 5vw;
+}
+
+.font {
+    font-family: 'Open Sans';
+    color: wheat;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#main-container {
+    border: 10px;
+    border-image: url(../img/rose-gold.jpg) 30 round;
+    background-color: #8a9280;
+
+    /* height: 80vh; */
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+#top-leaves {
+
+    background-image: url(../img/leaves.png);
+    background-size: auto 90px;
+    background-repeat: repeat-x;
+
+    height: 9vh;
+    width: 100%;
+}
+
+#clockdiv {
+    text-align: center;
+    margin-bottom: 5vh; 
+}
+
+#clockdiv>div {
+    padding: 1vw;
+    border-radius: 3px;
+    background: wheat;
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 2vw;
+    border-radius: 3px;
+    background: white;
+    color: #8a9280;
+    font-size: 3vh;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 1vh;
+    font-size: 1.2vw;
+    color: #8a9280;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+@media screen and (orientation:portrait) {
+    
+    #std{
+        font-size: 3.5vh;
+    }
+
+    #date{
+        font-size: 2vh;
+    }
+
+    #heart{
+        display: block;
+        font-size: 7vw;
+    }
+
+    #names{
+        font-size: 13vh;
+        margin-top: 1.5vh;
+    }
+
+    .smalltext {
+        font-size: 1.2vh;
+    }
+
+    #top-leaves {
+        background-size: auto 9vh;
+        height: 10vh;
+    }
+}
