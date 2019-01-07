@@ -2,58 +2,118 @@
 <html lang="en">
 
 <head>
-    <title>Filipa & Pedro</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/script.js"></script>
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Filipa & Pedro</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<script src="scripts/script.js"></script>
 </head>
 
 <body>
 
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Filipa e Pedro</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Início</a>
+					</li>
 
-    <div id="main-container">
+					<li class="nav-item">
+						<a class="nav-link" href="#">O Noivo</a>
+					</li>
 
-        <div id="top-leaves"></div>
+					<li class="nav-item">
+						<a class="nav-link" href="#">A Noiva</a>
+					</li>
 
-        <div id="std" class="center text-center font">Save the Date</div>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Informações</a>
+					</li>
+				</ul>
+			</div>
+			</button>
+		</div>
+	</nav>
 
-        <div id="date" class="center text-center font">13 de Setembro 2019</div>
+	<!--- Header -->
+	<div class="container-fluid padding p-5 names-container">
+		<div id="names" class="row">
+			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-right">
+				<h1 class="display-1 filipa">Filipa</h1>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+				<svg id="svg-heart" class="center" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 500 500">
+					<path id="heart" d="M243.228,189.969C163.1-66.868-232.649,82.624,229.3,414.543c5.97,32.482,55.026,33.695,38.468-3.02C237.394,344.185,417.15,272.9,464.785,226.194c81.993-80.4-47.6-301.836-221.557-36.225h0ZM228.3,206.694c-70.254-222.522-369.864-78.282-.091,192.3,8.011-63.325,151.775-109.5,201.866-171.819,42.194-52.485-14.312-152.292-102.946-85.444C299.558,162.506,269.711,200,247.291,268.716c-9.265,24.042-67.056,8.336-18.994-62.022h0Z" />
+				</svg>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-left">
+				<h1 class="display-1 pedro">Pedro</h1>
+			</div>
+		</div>
+	</div>
+	
+	<!--- Welcome Section -->
+	<div id="date" class="container-fluid p-5 bg-light">
+		<div class="row text-center">
+			<div class="col-12">
+				<h1>Vamos Casar!</h1>
+				<h2>13 de Setembro de 2019</h2>
+			</div>
+		</div>
+	</div>
 
-        <div id="names" class="center text-center">Filipa <span id="heart">♥</span> Pedro</div>
+	
 
-        <div id="clockdiv">
-            <div>
-                <span class="days"></span>
-                <div class="smalltext">Dias</div>
-            </div>
-            <div>
-                <span class="hours"></span>
-                <div class="smalltext">Horas</div>
-            </div>
-            <div>
-                <span class="minutes"></span>
-                <div class="smalltext">Minutos</div>
-            </div>
-            <div>
-                <span class="seconds"></span>
-                <div class="smalltext">Segundos</div>
-            </div>
-        </div>
+	<!-- Countdown -->
+	<div class="container-fluid countdown-container padding">
+		<div id="clock" class="row welcome text-center text-light">
+			<div class="col-12">
+				<h1 class="p-3">Falta...</h1>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h1 class="display-4"><span class="days"></span></h1>
+				<p>Dias</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h1 class="display-4"><span class="hours"></span></h1>
+				<p>Horas</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h1 class="display-4"><span class="minutes"></span></h1>
+				<p>Minutos</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h1 class="display-4"><span class="seconds"></span></h1>
+				<p>Segundos</p>
+			</div>
+		</div>
+	</div>
 
-        <div id="timeline" class="center text-center"></div>
+	<!--- Jumbotron -->
+	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla turpis a
+					lectus
+					sollicitudin, et accumsan felis tristique. Suspendisse a malesuada odio, ut vestibulum ligula.</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+				<button type="button" class="btn btn-outline-secondary btn-lg">Test</button>
+			</div>
+		</div>
+	</div>
 
-    </div>
 
 </body>
 

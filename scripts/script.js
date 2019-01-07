@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-
     function getTimeRemaining(endtime) {
         var t = Date.parse(endtime) - Date.parse(new Date());
         var seconds = Math.floor((t / 1000) % 60);
@@ -41,6 +39,6 @@ $(document).ready(function () {
     }
 
     var deadline = new Date("Sep 13, 2019 11:00:00");
-    initializeClock('clockdiv', deadline);
+    initializeClock('clock', deadline);
 
 });
