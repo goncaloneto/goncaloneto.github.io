@@ -63,13 +63,13 @@ body {
 
 /** Date **/
 
-#date{
+#date {
   font-family: 'Poppins';
 }
 
 /** End of Date **/
 
-.gif{
+.gif {
   max-width: 100%;
 }
 
@@ -80,6 +80,41 @@ body {
   background-image: url(img/leaves-countdown.jpg);
   background-size: auto;
   font-family: 'Poppins';
+}
+
+
+@media (max-width: 575px) {
+  .timeUnit {
+    font-size: 17px;
+  }
+}
+
+/* Small (sm) devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .timeUnit {
+    font-size: 22px;
+  }
+}
+
+/* Medium (md) devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .timeUnit {
+    font-size: 23px;
+  }
+}
+
+/* Large (lg) devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .timeUnit {
+    font-size: 25px;
+  }
+}
+
+/* Extra (xl) large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .timeUnit {
+    font-size: 27px;
+  }
 }
 
 /** End of Countdown **/
@@ -114,19 +149,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-hr.style15 {
-	border-top: 4px double #8c8b8b;
-	text-align: center;
-}
-hr.style15:after {
-	content: '\002665';
-	display: inline-block;
-	position: relative;
-	top: -15px;
-	padding: 0 10px;
-	background: #f0f0f0;
-	color: #8c8b8b;
-	font-size: 18px;
-}
-
