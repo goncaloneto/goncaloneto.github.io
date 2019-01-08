@@ -34,12 +34,30 @@ html {
   text-align: center;
 }
 
+.names-container h1{
+  font-size: 300px;
+}
+
+#svg-heart{
+  width: 200px;
+  height: 200px;
+}
+
 /* XSmall */
 @media (max-width: 575px) {
 
   .filipa,
   .pedro {
     text-align: center;
+  }
+
+  .names-container h1{
+    font-size: 120px;
+  }
+  
+  #svg-heart{
+    width: 80;
+    height: 80px;
   }
 }
 
@@ -49,6 +67,15 @@ html {
   .filipa,
   .pedro {
     text-align: center;
+  }
+
+  .names-container h1{
+    font-size: 150px;
+  }
+  
+  #svg-heart{
+    width: 100;
+    height: 100px;
   }
 }
 
@@ -60,6 +87,15 @@ html {
 
   .filipa {
     text-align: right;
+  }
+
+  .names-container h1{
+    font-size: 18vw;
+  }
+  
+  #svg-heart{
+    width: 9vw;
+    height: 9vw;
   }
 }
 
