@@ -8,6 +8,10 @@ body {
   background-repeat: repeat-x;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #logo{
   max-width: 75px;
 }
