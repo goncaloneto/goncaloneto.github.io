@@ -79,7 +79,7 @@ html {
   }
 }
 
-/* Md and above */
+/* Md */
 @media (min-width: 768px) {
   .pedro {
     text-align: left;
@@ -96,6 +96,46 @@ html {
   #svg-heart {
     width: 9vw;
     height: 9vw;
+  }
+}
+
+/* LG */
+@media (min-width: 992px) {
+  .pedro {
+    text-align: left;
+  }
+
+  .filipa {
+    text-align: right;
+  }
+
+  .names-container h1 {
+    font-size: 15vw;
+  }
+
+  #svg-heart {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+
+/* XL */
+@media (min-width: 1200px) {
+  .pedro {
+    text-align: left;
+  }
+
+  .filipa {
+    text-align: right;
+  }
+
+  .names-container h1 {
+    font-size: 11vw;
+  }
+
+  #svg-heart {
+    width: 6vw;
+    height: 6vw;
   }
 }
 
@@ -116,7 +156,9 @@ html {
 
 /* XSmall */
 @media (max-width: 575px) {
-  .timeline h4,p {
+
+  .timeline h4,
+  p {
     font-size: 80%;
   }
 }
