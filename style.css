@@ -3,12 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
-
-
-
 body {
   background-image: url(img/leaves-background.png);
   background-repeat: repeat-x;
+}
+
+#logo{
+  max-width: 75px;
 }
 
 /** Names **/
