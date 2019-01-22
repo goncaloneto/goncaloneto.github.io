@@ -1,216 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta charset="utf-8">
-	<meta property="og:title" content="Casamento Filipa e Pedro" />
-	<meta property="og:type" content="Informações sobre casamento Filipa e Pedro" />
-	<meta property="og:url" content="https://filipaepedro.site" />
-	<meta property="og:image" content="https://filipaepedro.site/img/fp.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Filipa & Pedro</title>
-	<link rel="icon" href="img/fp.png">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
-	<script src="scripts/script.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+
+<style>
+
+body {
+
+	background-image: url('grunge_patterns.jpg');
+	background-attachment: fixed;
+	color: #333;
+}
+
+.box {
+	border-radius: 3px;
+	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+}
+
+.lightbox {
+	zoom: 1.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.8);
+	text-align: center;
+	margin: auto;
+
+}
+
+div.horizontal {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+div.vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+::-moz-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+</style>
 
 <body>
 
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img id="logo" src="img/fp-green.png" /></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Início</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#noivo">O Noivo</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#noiva">A Noiva</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#info">Informações</a>
-					</li>
-				</ul>
-			</div>
-			</button>
-		</div>
-	</nav>
-
-	<!--- Header -->
-	<div class="container-fluid padding p-5 names-container">
-		<div id="names" class="row">
-			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-right">
-				<h1 class="filipa">Filipa</h1>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
-				<svg id="svg-heart" class="center align-self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-					<path id="heart" d="M243.228,189.969C163.1-66.868-232.649,82.624,229.3,414.543c5.97,32.482,55.026,33.695,38.468-3.02C237.394,344.185,417.15,272.9,464.785,226.194c81.993-80.4-47.6-301.836-221.557-36.225h0ZM228.3,206.694c-70.254-222.522-369.864-78.282-.091,192.3,8.011-63.325,151.775-109.5,201.866-171.819,42.194-52.485-14.312-152.292-102.946-85.444C299.558,162.506,269.711,200,247.291,268.716c-9.265,24.042-67.056,8.336-18.994-62.022h0Z" />
-				</svg>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-left">
-				<h1 class="pedro">Pedro</h1>
-			</div>
-		</div>
-	</div>
-
-	<!--- Vamos Casar Section -->
-	<div id="date" class="container-fluid p-5 bg-light">
-		<div class="row text-center">
-			<div class="col-12">
-				<h1>Vamos Casar!</h1>
-				<h2 class="weekday">Sexta-feira</h2>
-				<h2>13 de Setembro de 2019</h2>
-			</div>
-		</div>
-
-		<div class="row text-center padding">
-			<div class="col-4">
-				<img class="timeline-icon" src="img/namoro.png">
-			</div>
-			<div class="col-4">
-				<img class="timeline-icon" src="img/noivado.png">
-			</div>
-			<div class="col-4">
-				<img class="timeline-icon" src="img/wedding.png">
-			</div>
-		</div>
-
-		<div class="row" style="height: 50px;">
-			<div class="col-2 border-right">
-			</div>
-			<div class="col-2 border-left border-bottom">
-			</div>
-			<div class="col-2 border-right border-bottom">
-			</div>
-			<div class="col-2 border-left border-bottom">
-			</div>
-			<div class="col-2 border-right border-bottom">
-			</div>
-			<div class="col-2 border-left">
-			</div>
-		</div>
-
-		<div class="row text-center padding timeline">
-			<div class="col-4">
-				<h4>Namoro</h4>
-				<p>16/09/2016</p>
-			</div>
-			<div class="col-4">
-				<h4>Noivado</h4>
-				<p>19/09/2018</p>
-			</div>
-			<div class="col-4">
-				<h4>Casamento</h4>
-				<p>13/09/2019</p>
-			</div>
-		</div>
-
-		<hr class="my-4">
-
-		<div class="row text-center bg-light">
-			<div class="col-xs-12 col-sm-12 col-md-6 text-center">
-				<h3 id="noivo" class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xl-8 ">O Noivo</h3>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xl-8 ">
-						<img class="gif" src="img/gif/Pedro.gif" />
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-						<blockquote class="blockquote">
-							<p class="lead">"O Pedro está sempre bem disposto, e é muito palhacinho. Desde o dia em que nos conhecemos que
-								eu tenho vindo a sorrir todos os dias, como ele me prometeu que seria. Por isso decidimos casar para que
-								possamos sorrir ao lado um do outro o resto das nossas vidas."</p>
-							<footer class="blockquote-footer">A Noiva</footer>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-12 col-md-6 text-center">
-				<h3 id="noiva" class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xl-8 ml-auto">A Noiva</h3>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex">
-						<blockquote class="blockquote">
-							<p class="lead">"A Filipa tem muito bom humor, e adora ser picada por palitos desde o primeiro dia. Começou por
-								ser assim e desde aí que não nos largamos, agora vamos tornar isso oficial."</p>
-							<footer class="blockquote-footer">O Noivo</footer>
-						</blockquote>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xl-8 ">
-						<img class="gif" src="img/gif/Filipa.gif" />
-					</div>
+	<div id="loginbox" class="lightbox">
+		<div class="horizontal">
+			<div class="vertical">
+				<div class="box">
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="Password" /> <br />
+					<button id="loginbutton" type="button">Entrar</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="date" class="container-fluid p-5 bg-light">
-		<div class="row text-center">
-			<div class="col-12">
-				<h2>Pedimos que nos confirmem a vossa presença até dia <span class="weekday">30 de abril de 2019</span>!</h2>
-			</div>
-			<div class="col-6">
-				<h3>Filipa</h3> 
-				<h3 href="tel:916086445">916 086 445</h3>
-			</div>
-			<div class="col-6">
-				<h3>Pedro</h3> 
-				<h3 href="tel:960298869">960 298 869</h3>
-			</div>
-		</div>
-	</div>
 
-	<!-- Countdown -->
-	<div class="container-fluid countdown-container">
-		<div id="clock" class="row welcome text-center text-light">
-			<div class="col-12">
-				<h2>Faltam...</h2>
-			</div>
-			<div class="col-3">
-				<h3 class="days"></h3>
-				<p class="timeUnit">Dias</p>
-			</div>
-			<div class="col-3">
-				<h3 class="hours"></h3>
-				<p class="timeUnit">Horas</p>
-			</div>
-			<div class="col-3">
-				<h3 class="minutes"></h3>
-				<p class="timeUnit">Minutos</p>
-			</div>
-			<div class="col-3">
-				<h3 class="seconds"></h3>
-				<p class="timeUnit">Segundos</p>
-			</div>
-		</div>
-	</div>
 
-	<!--- Jumbotron -->
-	<div class="container-fluid">
-		<div class="row jumbotron">
-			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-				<i class="fas fa-exclamation-circle"></i>
-				<p id="info" class="lead">De momento não há mais informações. Logo que possível vamos atualizar este site!</p>
-			</div>
-			<!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-				<button type="button" class="btn btn-outline-secondary btn-lg">Test</button>
-			</div> -->
-		</div>
-	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+	<script type="text/javascript">
+		"use strict";
+
+
+		function loadPage(pwd) {
+			var hash = pwd;
+			hash = Sha1.hash(pwd);
+			var url = hash + "/index.html";
+			$.ajax({
+				url: url,
+				dataType: "html",
+				success: function (data) {
+					window.location = url;
+				},
+				error: function (xhr, ajaxOptions, thrownError) {
+					parent.location.hash = hash;
+					$("#password").attr("placeholder", "Password Errada");
+					$("#password").val("");
+				}
+			});
+		}
+
+
+		$("#loginbutton").on("click", function () {
+			loadPage($("#password").val());
+		});
+
+		$("#password").keypress(function (e) {
+			if (e.which == 13) {
+				loadPage($("#password").val());
+			}
+		});
+		$("#password").focus();
+	</script>
 
 </body>
 
