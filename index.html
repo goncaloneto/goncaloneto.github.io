@@ -13,15 +13,12 @@
 	<div class="container-fluid p-5">
 		<div class="row">
 			<div class="col-4"></div>
-			<div class="col-4">
-				<form>
-					<div class="form-group">
-						<label for="password">Password</label>
-						<input type="password" class="form-control" id="password" placeholder="Password">
-						<div class="text-danger p-2" style="font-size: 70%">Password errada, tente novamente</div>
-					</div>
-					<button type="submit" id="loginbutton" class="btn btn-primary">Entrar</button>
-				</form>
+			<div class="col-4 text-center">
+				<h4>Password</h4>
+				<input type="password" id="password" placeholder="Password" class="mb-2 mt-2">
+				<div class="text-danger pb-2" id="error" style="font-size: 70%; visibility: hidden;">Password errada, tente
+					novamente</div>
+				<button id="loginbutton" class="btn btn-primary">Entrar</button>
 			</div>
 			<div class="col-4"></div>
 		</div>
@@ -45,6 +42,7 @@
 				},
 				error: function (xhr, ajaxOptions, thrownError) {
 					parent.location.hash = hash;
+					$("#error").css("visibility", "visible");
 					$("#password").val("");
 				}
 			});
