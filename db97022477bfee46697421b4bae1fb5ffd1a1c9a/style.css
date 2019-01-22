@@ -19,7 +19,8 @@ html {
 /** Names **/
 .names-container {
   background-color: rgba(255, 255, 255, 0.6);
-  border-image: url(img/rose-gold.jpg) 30 round;
+  border: black solid 1px;
+  border-image: url(img/rose-gold.jpg) 30% stretch;
   border-width: thick;
 }
 
