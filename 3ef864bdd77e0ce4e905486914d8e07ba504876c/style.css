@@ -149,9 +149,10 @@ html {
   font-family: 'Poppins';
 }
 
-.weekday{
+.weekday {
   color: #ad7b7f;
 }
+
 /** End of Date **/
 
 .gif {
@@ -232,6 +233,19 @@ html {
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
   padding: 1rem;
+}
+
+.maps-container {
+  font-family: 'Poppins';
+}
+
+.map {
+  min-height: 500px;
+}
+
+.dir-quinta{
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /*
