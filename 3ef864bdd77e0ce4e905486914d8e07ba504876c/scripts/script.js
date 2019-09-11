@@ -38,7 +38,7 @@ $(document).ready(function () {
         var timeinterval = setInterval(updateClock, 1000);
     }
 
-    var deadline = new Date("Sep 13, 2019 11:30 :00");
+    var deadline = new Date("Sep 13, 2019 11:30:00");
     initializeClock('clock', deadline);
 
 });
