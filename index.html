@@ -1,71 +1,13 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Filipa & Pedro</title>
-	<meta property="og:title" content="Casamento Filipa e Pedro" />
-	<meta property="og:type" content="Informações sobre casamento Filipa e Pedro" />
-	<meta property="og:url" content="https://filipaepedro.site" />
-	<meta property="og:image" content="https://filipaepedro.site/img/fp.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="icon" href="img/fp.png">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</head>
-
+  <meta charset="utf-8">
+  <title>AndreCatarina</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.0b2ff2bdd3548aab3921.css"></head>
 <body>
-
-	<div class="container-fluid p-5">
-		<div class="row">
-			<div class="col-4"></div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-				<h4>Password</h4>
-				<input type="password" id="password" placeholder="Password" style="width:100%" class="mb-2 mt-2">
-				<div class="text-danger pb-2" id="error" style="font-size: 70%; visibility: hidden;">Password errada, tente
-					novamente</div>
-				<button id="loginbutton" class="btn btn-primary">Entrar</button>
-			</div>
-			<div class="col-4"></div>
-		</div>
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
-	<script type="text/javascript">
-		"use strict";
-
-
-		function loadPage(pwd) {
-			var hash = pwd;
-			hash = Sha1.hash(pwd);
-			var url = hash + "/index.html";
-			$.ajax({
-				url: url,
-				dataType: "html",
-				success: function (data) {
-					window.location = url;
-				},
-				error: function (xhr, ajaxOptions, thrownError) {
-					parent.location.hash = hash;
-					$("#error").css("visibility", "visible");
-					$("#password").val("");
-				}
-			});
-		}
-
-
-		$("#loginbutton").on("click", function () {
-			loadPage($("#password").val());
-		});
-
-		$("#password").keypress(function (e) {
-			if (e.which == 13) {
-				loadPage($("#password").val());
-			}
-		});
-		$("#password").focus();
-	</script>
-
-</body>
-
+  <app-root></app-root>
+<script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="scripts.b6d7a4ffc11edc34d548.js" defer></script><script src="main.4b55609b35af93d572b7.js" defer></script></body>
 </html>
