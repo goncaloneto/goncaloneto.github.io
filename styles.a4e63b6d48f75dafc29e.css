@@ -1,4 +1,4 @@
-h2,h3,h4,h5{padding-left:20px}h2{padding-top:30px}.pad-left{padding-left:20px}
+h2,h3,h4,h5{padding-left:20px}h2{padding-top:30px}.pad-left{padding-left:20px}@media only screen and (max-width:600px){.pad-left,h2,h3,h4,h5{padding-left:10px}h2{padding-top:10px}}@media only screen and (max-width:400px){h2{font-size:25px!important}}
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
