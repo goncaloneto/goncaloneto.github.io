@@ -1,5 +1,4 @@
-h2,h3,h4,h5{padding-left:20px}h2{padding-top:30px}.pad-left{padding-left:20px}@media only screen and (max-width:600px){.pad-left,h2,h3,h4,h5{padding-left:10px}h2{padding-top:10px}}@media only screen and (max-width:400px){h2{font-size:25px!important}}
-
+h2,h3,h4,h5{padding-left:20px}h2{padding-top:30px}.pad-left{padding-left:20px}@media only screen and (max-width:600px){.pad-left,h2,h3,h4,h5{padding-left:10px}h2{padding-top:10px}}@media only screen and (max-width:400px){h2{font-size:25px!important}}.gradient{background:linear-gradient(270deg,#0a285f,#819f4f,#f3d050);background-size:600% 600%;animation:GradientMotion 32s ease infinite}@keyframes GradientMotion{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
